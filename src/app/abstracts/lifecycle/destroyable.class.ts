@@ -7,7 +7,7 @@ import { IDestroyable } from './destroyable.interface';
 const destroySubject = Symbol('destroyed');
 
 @Directive({
-  selector: '[cmpDestroyable]'
+  selector: '[destroyable]'
 })
 // tslint:disable-next-line:directive-class-suffix
 export class Destroyable implements IDestroyable, OnDestroy {
